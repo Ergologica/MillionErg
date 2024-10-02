@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campagna di Crowdfunding Ergo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>MillionErg</h1>
+        <p>Contribuisci al progetto e aiutaci a raggiungere il nostro obiettivo!</p>
+
+        <div class="input-container">
+            <input id="amount" type="number" placeholder="Inserisci l'importo in ERG" min="1">
+            <button onclick="sendContribution()">Contribuisci</button>
+        </div>
+
+        <div id="status" class="status">
+            Stato della campagna: <span id="campaignStatus">Caricamento...</span>
+        </div>
+        
+        <div class="goal-info">
+            <p>Fondi raccolti: <span id="raisedAmount">0</span> ERG</p>
+            <p>Obiettivo minimo: <span id="minGoal">1000</span> ERG</p>
+            <p>Blocco corrente: <span id="currentHeight">Caricamento...</span></p>
+            <p>Deadline: <span id="deadline">Caricamento...</span></p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/ergo-lib-wasm-browser/ergo_lib_wasm.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
