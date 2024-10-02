@@ -9,6 +9,21 @@ body {
     align-items: center;
 }
 
+.header {
+    width: 100%;
+    background-color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
 .container {
     max-width: 800px;
     margin: 50px auto;
@@ -21,6 +36,7 @@ body {
 
 h1 {
     color: #4CAF50;
+    margin-bottom: 20px;
 }
 
 p {
@@ -55,4 +71,34 @@ button:hover {
     margin-top: 20px;
     font-size: 1.1em;
     font-weight: bold;
+}
+
+.goal-info {
+    margin-top: 30px;
+    font-size: 1.2em;
+    text-align: left;
+    line-height: 1.6;
+}
+
+footer {
+    width: 100%;
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
